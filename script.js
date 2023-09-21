@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const years = Math.floor(timeDifference / (1000 * 60 * 60 * 24 * 365))*(-1)-1;
         const months = Math.floor(timeDifference / (1000 * 60 * 60 * 24 * 30.44))*(-1)-1;
     
-        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24))*(-1)-1;
+        const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24))*(-1);
         const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))*(-1)-1;
         const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60))*(-1)-1;
         const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000)*(-1)-1;
