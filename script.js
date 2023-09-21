@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
         const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24))*(-1);
         const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))*(-1)-1;
-        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60))*(-1);
+        const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60))*(-1)-1;
         const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000)*(-1);
 
         const resultText = [
