@@ -9,89 +9,89 @@
 <body>
     <style>
         /* Reset some default styles */
-        body, h1, h2, p {
-            margin: 0;
-            padding: 0;
-        }
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
 
-        /* Set a background color and font */
-        body {
-            background-color: #eff3f6; /* A lighter background color */
-            font-family: Arial, sans-serif;
-        }
+/* Set a background color and font */
+body {
+    background-color: #eff3f6; /* A lighter background color */
+    font-family: Arial, sans-serif;
+}
 
-        /* Style the container */
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-        }
+/* Style the container */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
 
-        /* Style the header */
-        h1 {
-            text-align: center;
-            color: #333;
-            font-size: 32px;
-            margin-bottom: 20px;
-        }
+/* Style the header */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
 
-        /* Style the input section */
-        .input-section {
-            text-align: center;
-            margin-top: 20px;
-        }
+/* Style the input section */
+.input-section {
+    text-align: center;
+    margin-top: 20px;
+}
 
-        /* Style the input fields */
-        input[type="date"],
-        input[type="time"] {
-            padding: 12px;
-            margin: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 18px;
-        }
+/* Style the input fields */
+input[type="date"],
+input[type="time"] {
+    padding: 12px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+}
 
-        /* Style the result section */
-        .result-section {
-            text-align: center;
-            margin-top: 40px;
-        }
+/* Style the result section */
+.result-section {
+    text-align: center;
+    margin-top: 40px;
+}
 
-        /* Style the result image */
-        img {
-            display: block;
-            margin: 0 auto;
-            max-width: 100%;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
+/* Style the result image */
+img {
+    width: auto; /* Reduce the image size to 60% */
+    height:600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-        /* Style the result text */
-        #result {
-            margin-top: 20px;
-            font-size: 24px;
-            color: #333;
-        }
+/* Style the result text */
+#result {
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+}
 
-        /* Style the link */
-        a {
-            text-decoration: none;
-            color: #007BFF;
-            font-weight: bold;
-        }
+/* Style the link */
+a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
 
-        /* Style the link on hover */
-        a:hover {
-            text-decoration: underline;
-        }
+/* Style the link on hover */
+a:hover {
+    text-decoration: underline;
+}
 
     </style>
     <div class="container">
         <h1>GOW LOVE DIRU</h1>
         <div class="input-section">
+            
             <input type="date" id="inputDate" value="2021-04-06" required>
             <input type="time" id="inputTime" value="21:34" required>
         </div>
@@ -138,7 +138,7 @@
                 const countdownMinutes = Math.floor((countdownTimeDifference % (1000 * 60 * 60)) / (1000 * 60));
                 const countdownSeconds = Math.floor((countdownTimeDifference % (1000 * 60)) / 1000);
 
-                const countdownText = `${countdownDays} Days, ${countdownHours} Hours, ${countdownMinutes} Minutes, ${countdownSeconds} Kuttyma Birthday`;
+                const countdownText = `${countdownDays} Days, ${countdownHours} Hours, ${countdownMinutes} Minutes, ${countdownSeconds} Seconds until August 6th, 2024`;
 
                 result.textContent = resultText.join(', ') + ". " + countdownText;
             }
