@@ -99,6 +99,7 @@ a:hover {
             <h2>LOVE DATE CALCULATOR:</h2>
             <img src="diru.jpg" alt="">
             <p id="result"></p>
+             <p id="birth"></p>
         </div>
     </div>
     <script src="script.js"></script>
@@ -107,6 +108,7 @@ a:hover {
             const inputDate = document.getElementById('inputDate');
             const inputTime = document.getElementById('inputTime');
             const result = document.getElementById('result');
+             const birth = document.getElementById('birth');
 
             function updateTimer() {
                 const inputDateTime = new Date(inputDate.value + 'T' + inputTime.value);
@@ -126,8 +128,8 @@ a:hover {
                     months >= 0 ? `+${months} Months` : `${months} Months`,
                     days >= 0 ? `+${days} Days` : `${days} Days`,
                     hours >= 0 ? `+${hours} Hours` : `${hours} Hours`,
-                    minutes >= 0 ? `+${minutes} Minutes` : `${minutes} Min`,
-                    seconds >= 0 ? `+${seconds} Seconds` : `${seconds} Sec`,
+                    minutes >= 0 ? `+${minutes} Minutes` : `${minutes} Minutes`,
+                    seconds >= 0 ? `+${seconds} Seconds` : `${seconds} Seconds`,
                 ];
 
                 // Countdown to August 6th, 2024
@@ -138,9 +140,9 @@ a:hover {
                 const countdownMinutes = Math.floor((countdownTimeDifference % (1000 * 60 * 60)) / (1000 * 60));
                 const countdownSeconds = Math.floor((countdownTimeDifference % (1000 * 60)) / 1000);
 
-                const countdownText = `${countdownDays} Days, ${countdownHours} Hours, ${countdownMinutes} Minutes, ${countdownSeconds} Kuttyma Birthday`;
+                const countdownText = `${countdownDays} Days, ${countdownHours} Hours, ${countdownMinutes} Minutes, ${countdownSeconds} Seconds Kuttyma Birthday`;
 
-                result.textContent = resultText.join(', ') + ". " + countdownText;
+                birth.textContent = resultText.join(', ') + ". " + countdownText;
             }
 
             updateTimer(); // Initial calculation
