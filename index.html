@@ -4,20 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Date and Time Calculator with Timer</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
 </head>
 <body>
     <style>
-        /* Reset some default styles */
-        body, h1, h2, p {
-            margin: 0;
-            padding: 0;
-        }
-
         /* Set a background color and font */
         body {
             background-color: #eff3f6; /* A lighter background color */
             font-family: Arial, sans-serif;
+            padding-top: 20px;
         }
 
         /* Style the container */
@@ -88,6 +83,17 @@
             text-decoration: underline;
         }
 
+        /* Style the Kutty Birthday text */
+        .kutty-birthday {
+            color: #ff3860; /* Red color */
+            font-weight: bold;
+        }
+
+        /* Add some spacing */
+        .spacer {
+            margin-top: 20px;
+        }
+
     </style>
     <div class="container">
         <h1>GOW LOVE DIRU</h1>
@@ -99,6 +105,7 @@
             <h2>LOVE DATE CALCULATOR:</h2>
             <img src="diru.jpg" alt="">
             <p id="result"></p>
+            <p class="kutty-birthday">Kutty Birthday</p>
         </div>
     </div>
     <script src="script.js"></script>
@@ -149,5 +156,4 @@
             setInterval(updateTimer, 1000); // Update every second
         });
     </script>
-</body>
-</html>
+</body
