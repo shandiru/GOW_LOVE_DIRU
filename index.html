@@ -126,8 +126,8 @@ a:hover {
                     months >= 0 ? `+${months} Months` : `${months} Months`,
                     days >= 0 ? `+${days} Days` : `${days} Days`,
                     hours >= 0 ? `+${hours} Hours` : `${hours} Hours`,
-                    minutes >= 0 ? `+${minutes} Minutes` : `${minutes} Minutes`,
-                    seconds >= 0 ? `+${seconds} Seconds` : `${seconds} Seconds`,
+                    minutes >= 0 ? `+${minutes} Minutes` : `${minutes} Min`,
+                    seconds >= 0 ? `+${seconds} Seconds` : `${seconds} Sec`,
                 ];
 
                 // Countdown to August 6th, 2024
@@ -138,7 +138,7 @@ a:hover {
                 const countdownMinutes = Math.floor((countdownTimeDifference % (1000 * 60 * 60)) / (1000 * 60));
                 const countdownSeconds = Math.floor((countdownTimeDifference % (1000 * 60)) / 1000);
 
-                const countdownText = `${countdownDays} Days, ${countdownHours} Hours, ${countdownMinutes} Minutes, ${countdownSeconds} Seconds until August 6th, 2024`;
+                const countdownText = `${countdownDays} Days, ${countdownHours} Hours, ${countdownMinutes} Minutes, ${countdownSeconds} Kuttyma Birthday`;
 
                 result.textContent = resultText.join(', ') + ". " + countdownText;
             }
